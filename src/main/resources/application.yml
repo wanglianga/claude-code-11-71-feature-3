@@ -37,3 +37,6 @@ verify:
   # 路由接口单次返回的最大明细行数（完整行数在 rowCount 中体现）
   router:
     max-return-rows: 200
+  # 排行模块：同一（口径,月份,维度）请求达到该次数视为高频审计请求，优先预计算
+  ranking:
+    hot-frequency-threshold: 3
